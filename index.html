@@ -1,77 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Portfolio of Asad Azimi, a Computer Science student at Georgetown University and Software Engineering Intern at Duolingo focused on iOS development, Swift, and first-principles engineering." />
+
+	<title>[Your Name] | Software Engineer</title>
+
+	<link rel="stylesheet" href="styles.css" />
+	<script src="script.js" defer></script>
+	<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <img src="Asad-Azimi.jpg" alt="Photo of Asadullah" class="profile-photo">
-      <h1>Asadullah</h1>
-      <p class="subtitle">Computer Science Student | Future Software Engineer</p>
+	<!-- ========================= Header / Navigation ========================= -->
+	<header class="site-header">
+		<nav class="navbar" aria-label="Main navigation">
+			<a href="#hero" class="logo" aria-label="Go to homepage">
+				<span class="logo-mark">AA</span>
+				<span class="logo-text">Asad Azimi</span>
+			</a>
 
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+			<button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hello! My name is Asadullah. I am a computer science student at Georgetown University.
-        I enjoy learning how software works and building projects that help me grow as a developer.
-        This website is my personal portfolio where I can showcase my projects and skills.
-      </p>
-    </div>
-  </section>
+			<ul class="nav-menu">
+				<li><a href="#about" class="nav-link">About</a></li>
+				<li><a href="#experience" class="nav-link">Experience</a></li>
+				<li><a href="#projects" class="nav-link">Projects</a></li>
+				<li><a href="#interests" class="nav-link">Life</a></li>
+				<li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>My Projects</h2>
+	<!-- =============================== Main ================================ -->
+	<main>
+		<!-- ================================ Hero ================================ -->
+		<section id="hero" class="hero section">
+			<div class="hero-content reveal">
+				<p class="eyebrow">Computer Science Student · Software Engineer</p>
 
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>
-          A simple personal website made with HTML and CSS to introduce myself and show my work.
-        </p>
-      </div>
+				<h1>
+					<span class="headline-plain">Hi, I’m</span>
+					<span class="name-gradient">Asad Azimi.</span>
+				</h1>
 
-      <div class="project-card">
-        <h3>DuoRansom</h3>
-        <p>
-          A language-learning game project where players use vocabulary words to create funny and creative responses.
-        </p>
-      </div>
+				<p class="hero-tagline">
+					Software Engineer specializing in robust, first-principles development.
+				</p>
 
-      <div class="project-card">
-        <h3>Club Website</h3>
-        <p>
-          A website project for a student club to share information and create an online presence.
-        </p>
-      </div>
-    </div>
-  </section>
+				<p class="hero-description">
+					I care about building thoughtful, scalable software across mobile and backend systems —
+					from polished user interfaces to the engineering decisions that make products reliable.
+				</p>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: yourname@example.com</p>
-      <p>GitHub: github.com/yourusername</p>
-      <p>LinkedIn: linkedin.com/in/yourusername</p>
-    </div>
-  </section>
+				<div class="hero-actions">
+					<a href="#projects" class="btn btn-primary">View My Work</a>
+					<a href="#about" class="btn btn-secondary">Learn More</a>
+					<a href="AsadAzimi-resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+						Resume
+					</a>
+				</div>
+			</div>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Asadullah. All rights reserved.</p>
-    </div>
-  </footer>
+			<div class="hero-visual reveal">
+				<div class="profile-orbit">
+					<div class="profile-card">
+						<img
+							src="images/profile.png"
+							alt="Portrait of Asad Azimi"
+							class="profile-image"
+						/>
+					</div>
+				</div>
+
+				<div class="floating-card floating-card-one">
+					<span>Android</span>
+					<p>Kotline</p>
+				</div>
+
+				<div class="floating-card floating-card-two">
+					<span>iOS</span>
+					<p>Swift . UIKit</p>
+				</div>
+
+				<div class="floating-card floating-card-three">
+					<span>Backend</span>
+					<p>Python · APIs</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================================ About =============================== -->
+		<section id="about" class="about section">
+			<div class="section-header reveal">
+				<p class="eyebrow">About Me</p>
+				<h2>Learning from the foundation up.</h2>
+			</div>
+
+			<div class="about-layout">
+				<article class="glass-card about-story reveal">
+					<p class="about-kicker">My approach</p>
+
+					<h3>I care about understanding systems deeply, not just making things work.</h3>
+
+					<p>
+						I am a Computer Science student at Georgetown University with a strong interest
+						in software engineering, product thinking, and building reliable user-facing
+						applications.
+					</p>
+
+					<p>
+						My learning style is rooted in first principles: I like to understand the structure
+						underneath a technology before relying on abstractions. Whether I am working with
+						Swift, UIKit, backend APIs, or frontend interfaces, I try to ask why the system is
+						designed the way it is and how each piece fits into the larger product.
+					</p>
+
+					<div class="about-highlights">
+						<div class="mini-stat">
+							<span>CS</span>
+							<p>Georgetown University</p>
+						</div>
+
+						<div class="mini-stat">
+							<span>iOS</span>
+							<p>Swift + UIKit</p>
+						</div>
+
+						<div class="mini-stat">
+							<span>Build</span>
+							<p>First-principles mindset</p>
+						</div>
+					</div>
+				</article>
+
+				<div class="principles-stack">
+					<article class="glass-card principle-card reveal">
+						<span class="principle-number">01</span>
+						<h3>Depth over shortcuts</h3>
+						<p>
+							I prefer learning concepts deeply instead of copying surface-level tutorials.
+						</p>
+					</article>
+
+					<article class="glass-card principle-card reveal">
+						<span class="principle-number">02</span>
+						<h3>Clarity in structure</h3>
+						<p>
+							I enjoy organizing code, interfaces, and systems so they are easier to reason about.
+						</p>
+					</article>
+
+					<article class="glass-card principle-card reveal">
+						<span class="principle-number">03</span>
+						<h3>Product-aware engineering</h3>
+						<p>
+							I want the software I build to feel useful, thoughtful, and meaningful to real users.
+						</p>
+					</article>
+				</div>
+			</div>
+
+			<div class="about-currently glass-card reveal">
+				<p class="eyebrow">Currently focused on</p>
+
+				<div class="focus-list">
+					<span>Android Development</span>
+					<span>Kotlin</span>
+					<span>Production Mobile Engineering</span>
+					<span>Python Backend Work</span>
+					<span>iOS Development</span>
+					<span>Swift + UIKit</span>
+					<span>Product Engineering</span>
+					<span>Systems Thinking</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============================== Experience ============================= -->
+		<section id="experience" class="experience section">
+			<div class="section-header reveal">
+				<p class="eyebrow">Experience & Skills</p>
+				<h2>Building across mobile, product, and systems.</h2>
+			</div>
+
+			<div class="experience-layout">
+				<div class="experience-timeline">
+					<article class="glass-card experience-item reveal">
+						<div class="experience-meta">
+							<span class="status-dot"></span>
+							<p>Current Experience</p>
+						</div>
+
+						<div class="experience-content">
+							<div>
+								<h3>Software Engineering Intern</h3>
+								<h4>Duolingo · Growth / Retention · Android</h4>
+							</div>
+
+							<p>
+								Working on Duolingo’s Growth area as part of the Retention team, contributing
+								to Android product development with Kotlin and supporting backend work with
+								Python. I am gaining experience with production mobile engineering, debugging,
+								cross-platform product behavior, and user-facing retention features.
+							</p>
+
+							<div class="experience-tags">
+								<span>Android</span>
+								<span>Kotlin</span>
+								<span>Python</span>
+								<span>Growth</span>
+								<span>Retention</span>
+								<span>Product Engineering</span>
+							</div>
+						</div>
+					</article>
+
+					<article class="glass-card experience-item reveal">
+						<div class="experience-meta">
+							<span class="status-dot previous"></span>
+							<p>Previous Experience</p>
+						</div>
+
+						<div class="experience-content">
+							<div>
+								<h3>Software Engineering Intern</h3>
+								<h4>Duolingo · iOS Product Engineering</h4>
+							</div>
+
+							<p>
+								Built an iOS language-learning game project focused on playful sentence creation,
+								multiplayer game mechanics, voting, and user-centered product design. Developed
+								interfaces using Swift and UIKit with a fully programmatic UI approach.
+							</p>
+
+							<div class="experience-tags">
+								<span>Swift</span>
+								<span>UIKit</span>
+								<span>Programmatic UI</span>
+								<span>No Storyboards</span>
+								<span>APIs</span>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<aside class="skills-panel reveal">
+					<p class="skills-kicker">Technical Focus</p>
+					<h3>Tools and ideas I am building with.</h3>
+
+					<div class="skill-group">
+						<h4>Mobile Development</h4>
+						<div class="skill-list">
+							<div class="skill-pill">Android Development</div>
+							<div class="skill-pill">Kotlin</div>
+							<div class="skill-pill">iOS Development</div>
+							<div class="skill-pill">Swift</div>
+							<div class="skill-pill">UIKit</div>
+							<div class="skill-pill">100% Programmatic UI</div>
+						</div>
+					</div>
+
+					<div class="skill-group">
+						<h4>Backend & Product Systems</h4>
+						<div class="skill-list">
+							<div class="skill-pill">Python</div>
+							<div class="skill-pill">Backend Debugging</div>
+							<div class="skill-pill">APIs</div>
+							<div class="skill-pill">Product Engineering</div>
+							<div class="skill-pill">Retention Features</div>
+						</div>
+					</div>
+
+					<div class="skill-group">
+						<h4>Engineering Principles</h4>
+						<div class="skill-list">
+							<div class="skill-pill">Clean Architecture</div>
+							<div class="skill-pill">Systems Thinking</div>
+							<div class="skill-pill">Debugging</div>
+							<div class="skill-pill">First-Principles Learning</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</section>
+
+		<!-- =============================== Projects ============================== -->
+		<section id="projects" class="projects section">
+			<div class="section-header reveal">
+				<p class="eyebrow">Selected Work</p>
+				<h2>Projects that show how I think and build.</h2>
+			</div>
+
+			<div class="projects-grid">
+				<article class="project-card reveal">
+					<div class="project-icon">🎮</div>
+
+					<h3>DuoRansom</h3>
+
+					<p>
+						An iOS language-learning game inspired by Ransom Notes, built to help users
+						practice their target language through playful sentence creation, voting,
+						and multiplayer game mechanics.
+					</p>
+
+					<div class="project-tags">
+						<span>Swift</span>
+						<span>UIKit</span>
+						<span>Programmatic UI</span>
+						<span>Flask</span>
+						<span>APIs</span>
+					</div>
+
+					<div class="project-links">
+						<a href="#" class="project-link">View Details</a>
+						<a href="#" class="project-link secondary">GitHub</a>
+					</div>
+				</article>
+
+				<article class="project-card reveal">
+					<div class="project-icon">🌐</div>
+
+					<h3>Afghan Association Website</h3>
+
+					<p>
+						A student organization website designed to showcase events, leadership,
+						resources, and community updates for the Afghan Association at Georgetown.
+					</p>
+
+					<div class="project-tags">
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>JavaScript</span>
+					</div>
+
+					<div class="project-links">
+						<a href="#" class="project-link">View Project</a>
+					</div>
+				</article>
+
+				<article class="project-card reveal">
+					<div class="project-icon">🗳️</div>
+
+					<h3>Election Monitoring Tool</h3>
+
+					<p>
+						A technical election-monitoring workflow for student government elections,
+						involving vote data processing, validation, security concerns, and script-based
+						support for election integrity.
+					</p>
+
+					<div class="project-tags">
+						<span>Python</span>
+						<span>Data Processing</span>
+						<span>Security</span>
+					</div>
+
+					<div class="project-links">
+						<a href="#" class="project-link">View Details</a>
+					</div>
+				</article>
+
+				<article class="project-card reveal">
+					<div class="project-icon">✨</div>
+
+					<h3>Portfolio Website</h3>
+
+					<p>
+						A modern personal portfolio built from scratch using semantic HTML, advanced
+						CSS, responsive layouts, and vanilla JavaScript scroll animations.
+					</p>
+
+					<div class="project-tags">
+						<span>HTML</span>
+						<span>CSS Grid</span>
+						<span>JavaScript</span>
+					</div>
+
+					<div class="project-links">
+						<a href="#" class="project-link">View Code</a>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- ============================== Interests ============================== -->
+		<section id="interests" class="interests section">
+			<div class="section-header reveal">
+				<p class="eyebrow">Life & Interests</p>
+				<h2>Outside of code, I’m still practicing discipline, focus, and systems thinking.</h2>
+			</div>
+
+			<div class="bento-grid interests-bento">
+				<article class="bento-card interest-card interest-featured reveal">
+					<div class="bento-icon">🏋️</div>
+
+					<div>
+						<p class="interest-label">Main Discipline</p>
+						<h3>Fitness & Bodybuilding</h3>
+
+						<p>
+							Fitness keeps me grounded. It teaches me patience, consistency, and the value
+							of showing up even when progress is slow.
+						</p>
+					</div>
+
+					<div class="interest-principles">
+						<div>
+							<span>01</span>
+							<p>Consistency over motivation</p>
+						</div>
+
+						<div>
+							<span>02</span>
+							<p>Progressive improvement</p>
+						</div>
+
+						<div>
+							<span>03</span>
+							<p>Discipline under discomfort</p>
+						</div>
+					</div>
+				</article>
+
+				<article class="bento-card interest-card reveal">
+					<div class="bento-icon">♟️</div>
+
+					<p class="interest-label">Strategy</p>
+					<h3>Chess</h3>
+
+					<p>
+						Chess helps me practice long-term thinking, patience, pattern recognition,
+						and decision-making under constraints.
+					</p>
+				</article>
+
+				<article class="bento-card interest-card reveal">
+					<div class="bento-icon">🎹</div>
+
+					<p class="interest-label">Creativity</p>
+					<h3>Learning Piano</h3>
+
+					<p>
+						Piano gives me a different kind of challenge: slow practice, rhythm,
+						attention to detail, and creative expression.
+					</p>
+				</article>
+
+				<article class="bento-card interest-card interest-wide reveal">
+					<div class="bento-icon">📚</div>
+
+					<p class="interest-label">Mental Models</p>
+					<h3>Reading Systems-Focused Non-Fiction</h3>
+
+					<p>
+						I enjoy accessible books about habits, logic, decision-making, and systems
+						thinking — ideas that help me improve how I learn, work, and build.
+					</p>
+
+					<div class="reading-tags">
+						<span>Habits</span>
+						<span>Logic</span>
+						<span>Systems</span>
+						<span>Decision-making</span>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- =============================== Contact =============================== -->
+		<section id="contact" class="contact section">
+			<div class="contact-card glass-card reveal">
+				<p class="eyebrow">Let’s Connect</p>
+				<h2>Interested in thoughtful software and meaningful products.</h2>
+				<p>
+					I’m always excited to learn, collaborate, and build things that help people.
+				</p>
+
+				<div class="contact-actions">
+					<a href="mailto:asadazimi85@gmail.com" class="btn btn-primary">Email Me</a>
+					<a href="https://www.linkedin.com/in/asadullah-azimi/" class="btn btn-secondary">LinkedIn</a>
+					<a href="https://github.com/Asad-Azimi" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- =============================== Footer =============================== -->
+	<footer class="site-footer">
+		<p>&copy; <span id="year"></span> [Your Name]. Built with vanilla HTML, CSS, and JavaScript.</p>
+	</footer>
 </body>
 </html>
